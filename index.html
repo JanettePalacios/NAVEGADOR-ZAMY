@@ -1,0 +1,228 @@
+<!DOCTYPE html5>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-ZC6MVD-pRQPi-lbgt2gn9M11gMIQziv-uc-rwKs4F4hCpdd_n_gSISmzu6SDFrWrVMN73g0Mnkuqqnm8maKUGIBbzkzHr1EhlJaylf73rHDr2Zz6qlDuh2076lbiMk0abXfluGhkibtwN-3WHR8ULJ_bby-kVJmwdMSNAjMAHBBpjUKTKT1rzeFdIA/s256/original.png"
+        type="image/x-icon">
+    <title>Navegador | Zamy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --dark: #252525;
+        --light: #a5a3a3;
+        --boxBtn: 2px 2px 5px rgba(0, 0, 0, 0.596), 3px 3px 6px rgba(0, 0, 0, 0.15), inset -2px -2px 5px rgba(255, 255, 255, 0.816), inset 3px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    body {
+        transition: background 0.3s;
+    }
+    
+    body.dark {
+        background: var(--dark);
+    }
+    /*--------boton de dark-------------*/
+    
+    .btn-dark .btn {
+        position: absolute;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 80%;
+        z-index: 1;
+        background: rgb(0, 38, 255);
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: var(--boxBtn);
+        display: grid;
+        place-items: center;
+        font-size: 1.4rem;
+    }
+    
+    .btn-dark .btn:hover {
+        transform: scale(0.9);
+    }
+    
+    .btn-dark .btn::before {
+        content: '\f186';
+        font-family: fontAwesome;
+        color: #000;
+    }
+    
+    body.dark .btn-dark .btn::before {
+        content: '\f185';
+        font-family: fontAwesome;
+    }
+    /*--------boton de dark-------------*/
+    
+    section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section .main {
+        width: 580px;
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    section .main .searBox {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    section .main .searBox .qwerty {
+        width: 100%;
+        height: 44px;
+        padding: 13px;
+        border: 1px solid #ccc;
+        z-index: 3;
+        outline: none;
+        font-size: 16px;
+        border-radius: 24px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    
+    section .main .searBox .qwerty:hover {
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+    
+    section .main .searBox .icons {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 20px;
+        align-items: center;
+        pointer-events: none;
+    }
+    
+    section .main .searBox .icons img {
+        max-width: 100%;
+    }
+    
+    .main .center {
+        display: flex;
+        padding-top: 20px;
+    }
+    
+    .searBtn {
+        background-color: rgb(238, 240, 242);
+        border: 1px solid hsl(210deg, 17%, 98%);
+        border-radius: 4px;
+        color: hsl(206deg, 6%, 25%);
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        margin: 11px 5px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .searBtn:hover {
+        box-shadow: 0 1px 1px rgb(0, 0, 0, 10%);
+        background-color: hsl(210deg, 17%, 98%);
+        border: 1px solid hsl(220deg, 9%, 87%);
+        color: hsl(225deg, 6%, 13%);
+    }
+</style>
+
+<body>
+    <div class="btn-dark">
+        <div class="btn"></div>
+    </div>
+    <section>
+        <div class="main">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiKQtjTMk2vIDDYx2z8kohqnd4pnA-z-0MA9rMuKULoA76BhkAyRqMJwj3h3kHUnwZ0E9i0b5nJT96Nk98qNrQBLOMBZqjqIhNdtw11iwXeIIs9ac9rhDownUcZCYGsWFen7CgyuZ6Xu0ER72Aj8DcZNzKWaTLVFW80-Zg-9OFCpKJ-MrlPTw389D7kA/s272/google.png"
+                alt="">
+            <div class="searBox">
+                <input type="text" name="" class="qwerty">
+                <div class="icons">
+
+                    <div><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimR0Ywd-y_UcZZHRm4Yj1dHPEX_Oo_22yoWtfW2rCiSWXyMVU-zdrCBPOftmiSsb92fkF24VAe3-e99-h86pLZRRrzoRp8nplzAS-N__dTAdRi98Ek8rR1Qc5NtPjcYHETgXEtf-ORW2Hr921IPbJTAVhvHsQnN4BtzWwg5srhdG0JbLdz1G4_J-0Vkw/s16/search.png"
+                            alt=""></div>
+
+                    <div><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJwuln-idFg-j_jDog7ljbZW7pmTN4VnjHdnQsLGKdt6fGJoirIdVTQR8tC7ee2oKMWpKsofIIRpK_gQY6ow1djzJUvaYyyKaCfsm2XcVe8vbrkv7HzLocNOHbRwuW1-AoYFLTwI2mkV__QSl6LQUBC7tByFIHBUM-fmdCUy5GN2xi-9hRsU8YzFiHKA/s23/mic.png"
+                            alt=""></div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="btn">
+                    <button class="searBtn buscar"><b>Buscar</b></button>
+                </div>
+                <div class="btn">
+                    <button onclick="window.location.href='https://www.facebook.com/ing.inf.zamy/'" class="searBtn doodles"><b>
+                        Programador</b></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script>
+    const Body = document.querySelector('body');
+    const BotonDark = document.querySelector('.btn');
+
+    BotonDark.onclick = () => {
+        Body.classList.toggle('dark');
+
+        if (Body.classList.contains('dark')) {
+            localStorage.setItem('ModoDarkAgregado', 'true');
+        } else {
+            localStorage.setItem('ModoDarkAgregado', 'false');
+        }
+    }
+
+    if (localStorage.getItem('ModoDarkAgregado') === 'true') {
+        Body.classList.add('dark');
+    } else {
+        Body.classList.remove('dark');
+    }
+
+    let querty = document.querySelector('.qwerty');
+    let search = document.querySelector('.buscar');
+
+    // Para el Boton
+    search.onclick = () => {
+        let url = 'https://www.google.com/search?q=' + querty.value;
+        window.open(url, '_self');
+    }
+
+    // Para enter
+    querty.addEventListener('keypress', (e) => {
+        if (e.key === "Enter") {
+            let url = 'https://www.google.com/search?q=' + querty.value;
+            window.open(url, '_self');
+        }
+    })
+</script>
+
+
+</html>
